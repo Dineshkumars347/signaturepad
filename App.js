@@ -1,20 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import NewApp from './Screens/Signaturepad'
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+<>
+<View style={styles.container}>
+  <Text style={{textAlign:'center',fontWeight:'bold'}}>SIGNATURE PAD</Text>
+</View>  
+<NewApp></NewApp>
+</>  
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  container: { 
+    marginTop:20,
+    padding:10,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });

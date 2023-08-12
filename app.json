@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "22d02432-09ca-4cf5-a102-4ef08bf0c037"
+      }
+    },
+    "owner": "dinesh93"
   }
 }
