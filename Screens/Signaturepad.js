@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react';
-import {SafeAreaView, StatusBar, TouchableOpacity, Text, ScrollView, View} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import {SafeAreaView,TouchableOpacity, Text, ScrollView, View} from 'react-native';
 import {SignatureView} from 'react-native-signature-capture-view';
 
 const Newapp = () => {
@@ -8,7 +9,8 @@ const Newapp = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{ flex: 1}}>
+      <SafeAreaView style={{ flex: 1,width:'90%',height:'90%',margin:15,
+      justifyContent:'center',alignContent:'center',flexDirection:'column',}}>
         <SignatureView
         style={{
           borderWidth:2,
@@ -29,16 +31,17 @@ const Newapp = () => {
             setText('')
           }}
         />
+        <StatusBar/>
         <View style={{flexDirection: 'row', justifyContent:'center', height: 50}}>
         <TouchableOpacity
-        style={{ justifyContent:'center',alignItems:'center', flex:1}}
+        style={{ justifyContent:'center',alignItems:'center', flex:1,backgroundColor:'#f05659',borderRadius:10}}
           onPress={() => {
             signatureRef.current.clearSignature();
           }}>
           <Text>Clear</Text>
         </TouchableOpacity>
         <TouchableOpacity
-         style={{ justifyContent:'center',alignItems:'center', flex:1}}
+         style={{ justifyContent:'center',alignItems:'center', flex:1,backgroundColor:'#7fe391',borderRadius:10}}
           onPress={() => {
             signatureRef.current.saveSignature();
           }}>
