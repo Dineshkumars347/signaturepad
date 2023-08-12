@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react';
 import {SafeAreaView, StatusBar, TouchableOpacity, Text, ScrollView, View} from 'react-native';
-import SignatureView from 'react-native-signature-capture-view';
+import {SignatureView} from 'react-native-signature-capture-view';
 
 const Newapp = () => {
   const signatureRef = useRef(null);
