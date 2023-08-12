@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react';
 import {SafeAreaView, StatusBar, TouchableOpacity, Text, ScrollView, View} from 'react-native';
 import SignatureView from 'react-native-signature-capture-view';
 
-const App = () => {
+const Newapp = () => {
   const signatureRef = useRef(null);
   const [text,setText] = useState('')
   return (
@@ -54,4 +54,4 @@ const App = () => {
   );
 };
 
-export default NewApp;
+export default Newapp;
