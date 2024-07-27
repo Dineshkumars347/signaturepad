@@ -4,7 +4,7 @@ import {SafeAreaView,TouchableOpacity, Text, ScrollView, View} from 'react-nativ
 import {SignatureView} from 'react-native-signature-capture-view';
 
 const Newapp = () => {
-  const signatureRef = useRef(null);
+  const SignatureRef = useRef(null);
   const [text,setText] = useState('')
   return (
     <>
@@ -17,7 +17,7 @@ const Newapp = () => {
           height:200,
         }}
         
-          ref={signatureRef}
+          ref={SignatureRef}
           // onSave is automatically called whenever signature-pad onEnd is called and saveSignature is called
           onSave={(val) => {
             //  a base64 encoded image
@@ -36,14 +36,14 @@ const Newapp = () => {
         <TouchableOpacity
         style={{ justifyContent:'center',alignItems:'center', flex:1,backgroundColor:'#f05659',borderRadius:10}}
           onPress={() => {
-            signatureRef.current.clearSignature();
+            SignatureRef.current.clearSignature();
           }}>
           <Text>Clear</Text>
         </TouchableOpacity>
         <TouchableOpacity
          style={{ justifyContent:'center',alignItems:'center', flex:1,backgroundColor:'#7fe391',borderRadius:10}}
           onPress={() => {
-            signatureRef.current.saveSignature();
+            SignatureRef.current.saveSignature();
           }}>
           <Text>Save</Text>
         </TouchableOpacity>
