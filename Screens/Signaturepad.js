@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import {SafeAreaView,TouchableOpacity, Text, ScrollView, View} from 'react-native';
 import {SignatureView} from 'react-native-signature-capture-view';
 
+
 const Newapp = () => {
   const SignatureRef = useRef(null);
   const [text,Settext] = useState('')
