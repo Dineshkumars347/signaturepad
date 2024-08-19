@@ -6,7 +6,7 @@ import {SignatureView} from 'react-native-signature-capture-view';
 
 const Newapp = () => {
   const SignatureRef = useRef(null);
-  const [text,Settext] = useState('')
+  const [text,setText] = useState('')
   return (
     <>
       <StatusBar barStyle="dark-content" />
